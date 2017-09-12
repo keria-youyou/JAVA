@@ -1,11 +1,6 @@
-package demo;
-
-public class Hello {
-	
-	
-	public static void main(String[] args) {
-		System.out.println("hello world");
-	}
+class HelloWorld{
+    public static void main(String[] args){
+        System.out.println("Hello World!");
+    }
 }
-
 //自动补齐的快捷键 Ctrl+Alt+?/
