@@ -1,0 +1,8 @@
+class KeyWordDemo {
+    public static void main(String[] args){
+        Stystem.out.println("Hello World");
+    }
+}
+/*
+关键字：被JAVA赋予特定含义的单词
+*/
