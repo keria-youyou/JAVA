@@ -1,0 +1,11 @@
+class OperatorDemo {
+   public static void main(String[] args){
+       int x = 3;  //把3赋值给int类型的x
+       int y = 4;
+       
+       System.out.println(x+y);
+       System.out.println(x-y);
+       System.out.println(x*y);
+       System.out.println(x/y); //整数相除
+   }
+}
