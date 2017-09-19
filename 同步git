@@ -1,0 +1,9 @@
+git remote add JAVA(文件名) git@github.com:keria-youyou/JAVA.git
+git push -u origin master
+如果失败可以在上面两个之间添加如下命令
+git add .
+git commit -m"提交说明"
+git pull JAVA master
+git push JAVA master
+
+就是这样啦
