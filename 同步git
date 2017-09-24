@@ -1,4 +1,4 @@
-git remote add JAVA(文件名) git@github.com:keria-youyou/JAVA.git
+git remote add JAVA(文件名) git@github.com:keria-youyou/JAVA.git）（git的地址）
 git push -u origin master
 如果失败可以在上面两个之间添加如下命令
 git add .
