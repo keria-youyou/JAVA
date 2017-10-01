@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class Yanghui{
+	public static void main(String[] args){
+		//创建键盘录入对象
+		Scanner sc = new Scanner(System.in);
+		
+		//这个n的数据来自于键盘录入
+		System.out.println("请输入一个数据");
+		int n = sc.nextInt();
+		
+		//定义二维数组
+		int[][] arr = new int [n][n];
+		
+		//给这个二维数组任何一行的第一列和最后一列赋值为1
+		for(int x=0;x<arr.length;x++){
+			arr[x][0] = 1; //任何一行第一列
+			arr[x][x] = 1; //任何一行的最后一列
+		}
+		
+		//按规律给其他元素赋值
+		for(int x=2;x<arr.length;x++){
+			for(int y=1;y<=x-1;y++){
+				arr[x][y] = arr[x-1][y-1] + arr[x-1][y];
+			}
+		}
+		
+		//遍历这个二维数组
+		/*for(int x=0; x<arr.length; x++){
+			for(int y=0; y<arr[x].length; y++){
+				System.out.print(arr[x][y]+"\t");
+			}
+			System.out.println();
+		}
+		*/
+		for(int x=0; x<arr.length; x++){
+			for(int y=0; y<=x; y++){
+				System.out.print(arr[x][y]+"\t");
+			}
+			System.out.println();
+		}
+	}
+}
